@@ -5,6 +5,9 @@
 body{
     background-color: #E4EBF2;
     background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .carousel-inner{
@@ -44,21 +47,44 @@ width: 100%;
     text-align: center;
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;;
-    margin: 50px 0px ;
+    margin: 50px auto ;
 }
 
 
 
 .section-chamada {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    padding: 50px, 30px;
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif; 
-    width: 80%;
-    height: 80%;
+    max-width: 513px;
+    height: 500px;
+}
+
+.img-chamada { 
+    max-width: 375px;
+}
+
+.p-chamada { 
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* Planos */
+.grupo-cards{
+    margin: 150px 0; 
+    padding: 50px 30px;
+    background-color: #CCD2D9;
+    
+}
+
+.img-planos { 
+    max-height: 400px;
 }
 
 
