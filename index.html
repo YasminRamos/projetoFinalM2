@@ -20,7 +20,7 @@
     <!-- menu-Navegação -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Logo</a>
+            <a class="navbar-brand" href="index.html">Logo</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,14 +28,17 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Planos</a>
+                        <a class="nav-link" href="#planos">Planos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
                     </li>
 
                     <li class="nav-item d-flex ">
-                        <a class="nav-link">Login</a>
+                        <a class="nav-link" href="login.html">Login</a>
                     </li>
                 </ul>
             </div>
@@ -93,19 +96,54 @@
         <section>
             <!-- chamada -->
             <div class="section-chamada">
-                <img src="img/section2.png" alt="">
-                <p><strong>Desenvolva 3x mais rápido e com alta qualidade, com nosso sitema inteligente de layouts.</strong></p>
+                <img src="img/section2.png" alt="" class="img-chamada">
+                <p class="p-chamada"><strong>Desenvolva 3x mais rápido e com alta qualidade, com nosso sitema inteligente de layouts.</strong></p>
             </div>
         </section>
         <section>
             <!-- nossos planos -->
-            <div class="planos">
-
-            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4 grupo-cards">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/lukas-blazek-mcSDtbWXUZU-unsplash.jpg" class="card-img-top img-planos" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Free</h5>
+                      <p class="card-text">Acesso a alguns templates pré-disponíveis, sem a possibilidade de fazer um personalizado novo. </p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted"><strong>Grátis</strong></small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/igor-miske-Px3iBXV-4TU-unsplash.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Projeto Único</h5>
+                      <p class="card-text">Acesso para desenvolvimento de um único projeto personalizado como desejar, com apoio da nossa equipe de designers.</p>
+                    </div>
+                    <div class="card-footer">
+                      <strong class="text-muted"><strong>R$ 200/mês</strong></strong>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/img1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Premium</h5>
+                      <p class="card-text">Acesso ilimitado a quantos projetos desejar e por tempo indeterminado.</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted"><strong>500/mês</strong></small>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </section>
     
    <section id="msgContato">
-            <h1>Contate-nos</h1>
+            <h1 id="contato">Contate-nos</h1>
             <div id="msg">
                 <h3>Fale Conosco:</h3>
                 <form action="contato">
@@ -127,6 +165,12 @@
                     Tel: (13)3333-4444 <br>
                     E-mail: yasmincoelhoramos@gmail.com
                 </p>
+                
+                <p>
+                    Alex Gomes <br>
+                    Tel: (21)3333-4444 <br>
+                    E-mail: exemplo@gmail.com
+                </p>
             </section>
         </section>
       </main>
@@ -136,12 +180,10 @@
             <p>Resilia educação Turma 15</p>
         </div>
         <div>
-            <ul>
-                <li>Alex</li>
-                <li>Grazi</li>
-                <li>Tárcio</li>
-                <li>Yasmin</li>
-            </ul>
+                <span>Alex</span>
+                <span>Grazi</span>
+                <span>Tárcio</span>
+                <span>Yasmin</span>
         </div>
     </footer>
     <!--Bootstrap scripts-->
