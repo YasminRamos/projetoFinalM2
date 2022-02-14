@@ -15,7 +15,7 @@ body{
 }
 
 .carousel-img1 { 
-background-image: url(img/tpl3.jpg);
+background-image: url(img/nossos-planos.png);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -24,7 +24,7 @@ width: 100%;
 }
 
 .carousel-img2 {
-    background-image: url(img/carousel2.jpg);
+    background-image: url(img/empresa.png);
     background-position: 0 -0.1%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,13 +33,14 @@ width: 100%;
 }
 
 .carousel-img3 {
-    background-image: url(img/tpl4.jpg);
+    background-image: url(img/bolos.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 77vh;
     width: 100%;
 }
+
 
 
 /*Main*/
