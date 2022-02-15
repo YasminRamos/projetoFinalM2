@@ -77,7 +77,7 @@ width: 100%;
 
 /* Planos */
 .grupo-cards{
-    margin: 150px 0; 
+    margin: 50px 0; 
     padding: 50px 30px;
     background-color: #CCD2D9;
     
@@ -87,6 +87,34 @@ width: 100%;
     max-height: 400px;
 }
 
+/* contatos */
+.contato-section > h1 {
+    text-align: center;
+    margin-bottom: 50px;
+ }
+
+.msg { 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    margin: 0 auto;
+    width: 450px;
+}
+
+form label, form legend { 
+    
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao { 
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 100%;
+}
 
 
 
