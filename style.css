@@ -81,7 +81,7 @@ width: 100%;
     background-color: #CCD2D9;
     text-align: center;
     box-sizing: border-box;
-    padding: 70px;
+    padding: 70px; 
 }
 
 .card { 
@@ -96,8 +96,9 @@ width: 100%;
     transition: 1s;
 }
 
-.container-planos > h1 { 
+.container-planos > h2 { 
    font-size: 2.3rem;
+   text-align: center;
 }
 
 .grupo-cards{
