@@ -65,3 +65,25 @@
                     <br>
                     <textarea id="msg" rows="6" placeholder="Escreva sua mensagem"></textarea>
                 </form>
+
+                login :
+                
+                <div id="body">
+        <form action="login">
+            <input type="email" name="email" id="email" placeholder="Insira seu e-mail">
+            <br>
+            <input type="password" name="senha" id="senha" placeholder="Digite uma senha">
+            <br>
+            <!--validar o campo como e-mail-->
+            <a href="senha.html">Esqueci minha senha</a>
+            <input type="submit" value="EMAIL" id="verificar-email" />
+            <p></p>
+
+        </form>
+        <div>
+            <h3>Ainda não possui cadastro?</h3>
+            <p>Cadastre-se<a href="cadastro.html"> aqui!</a></p>
+
+        </div>
+
+    </div>
