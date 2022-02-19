@@ -1,25 +1,22 @@
-//validação de e-mail
-$(document).ready(function() {
-	$("p").hide();
-	$('#verificar-email').click(function(){
-		//desabilitando o submit do form
-		$("form").submit(function () { return false; });
-		//atribuindo o valor do campo
-		var sEmail	= $("#email").val();
-		// filtros
-		var emailFilter=/^.+@.+\..{2,}$/;
-		var illegalChars= /[\(\)\<\>\,\;\:\\\/\"\[\]]/
-		// condição
-		if(!(emailFilter.test(sEmail))||sEmail.match(illegalChars)){
-			$("p").show().removeClass("ok").addClass("erro")
-			.text('Por favor, informe um email válido.');
-		}else{
-			$("p").show().addClass("ok")
-			.text('Email informado está correto!');
-		}
-	});
-	$('#email').focus(function(){
-		$("p.erro").hide();
-	});
-});	
+//validando e-mail 
 
+$(document).ready(function () {
+    $('#erro').hide();
+    $('#email').blur(function (event) {
+        var _email = $('.infobox').val();
+        if (validar_email(_email)) {
+            $('#erro').hide();
+            $('.submit').click(function(){
+                alert("Mensagem enviada com sucesso!")
+            })
+        }
+        else {
+            $('#erro').show();
+            event.preventDefault();
+        }
+    });
+});
+function validar_email(email) {
+    var padrao = new RegExp(/^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]+$/);
+    return padrao.test(email);
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="projetoFinal.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Projeto Final Módulo 2</title>
     <!-- bootstrap Css -->
@@ -14,7 +15,7 @@
     <!-- css link -->
     <link rel="stylesheet" href="style.css">
     <!-- Js Link -->
-    <sript src="projetoFinal.js" defer></sript>
+    
 </head>
 
 <body>
@@ -150,7 +151,7 @@
         </section>
 
         <!-- contatos -->
-        <form class="contato-section">
+        <form class="contato-section" id="form" name="cadastrese" method="post" action="">
             <h1 id="contato">Contate-nos:</h1>
 
             <div id="msg" class="msg">
@@ -159,15 +160,17 @@
                     placeholder="Ex: José da Cunha Carneiro">
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                <input type="email" id="email" name="email" class="infobox" required placeholder="seuemail@dominio.com">
+                <span id="erro" style="color:red">Endereço de e-mail inválido.</span>
 
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
 
                 <label for="mensagem">Mensagem:</label>
                 <textarea name="" id="mensagem" cols="68" rows="10" class="input-padrao" required></textarea>
-                <input type="submit" value="EMAIL" id="verificar-email" />
-                <p></p>
+                <button id="button" class="submit">Enviar</button>
+                
+    
             </div>
         </form>
 
