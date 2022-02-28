@@ -6,8 +6,8 @@ $(document).ready(function () {
         var _email = $('.infobox').val();
         if (validar_email(_email)) {
             $('#erro').hide();
-            $('.submit').click(function(){
-                alert("Mensagem enviada com sucesso!")
+            $('.enviar').click(function(){
+                alert("Enviado com sucesso!")
             })
         }
         else {
