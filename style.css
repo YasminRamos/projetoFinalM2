@@ -283,6 +283,34 @@ form label, form legend {
     color: #CCD2D9;
 }
 
+/* cadastro */
+.form-cadastro { 
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+    margin: 0 auto;
+    width: 70%;
+    height: 100%;
+    padding-bottom: 10px;
+
+}
+
+.filho-cadastro { 
+    text-align: center;
+    width: 50%;
+}
+
+.titulo-cadastro {
+    margin-top: 15px; 
+    margin-bottom: 25px;
+}
+
+.from-itens { 
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+}
 
 
 
