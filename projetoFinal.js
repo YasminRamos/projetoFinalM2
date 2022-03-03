@@ -51,9 +51,9 @@ cep.on("change", function (event) {
 button.on("click", function (event) {
     event.preventDefault()
     if (email.val() != '' && nome.val() != '' && cep.val() != '' && rg.val() != '' && senha.val() != '' && confirmeSenha.val() != '' ) { 
-    alert ("Cadastro realizado com sucesso!")
     } else {
         alert ("Preencha os campos!")
     }
     
 })
+
